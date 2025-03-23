@@ -1,5 +1,5 @@
 ### Compile Time Polymorphism or Method overloading
-* Python dosen't support traditional method overloading.
+* Python dosen't support traditional method overloading.However, we can achieve it using default arguments.
 ```py
 class MathOp:
     def add(self,a,b,c=0):
