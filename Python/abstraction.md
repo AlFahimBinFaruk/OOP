@@ -1,5 +1,6 @@
 ### Abstraction
 * When we are going to use the car and bike class methods we are going to reffer to the vehicle class.
+* Virtual class can have non-abstract method. But if any virtual class have only abstract method its called interface.
 ```py
 from abc import ABC,abstractmethod
 
