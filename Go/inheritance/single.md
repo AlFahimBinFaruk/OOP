@@ -1,4 +1,5 @@
 ### Single Inheritance in Go.
+* Go don't have traditional inheritance, so we can implement it's features using the concept of composition.
 ```go
 type Animal struct{}
 
