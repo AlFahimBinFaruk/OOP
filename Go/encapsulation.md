@@ -1,10 +1,6 @@
 ### Encapsulation in Go.
 * Go, encapsulation is more of a convention rather than being enforced with explicit keywords like private, protected, or public in C++ or Java.
 ```go
-package main
-
-import "fmt"
-
 type BankAccount struct{
 	balance int;
 }
