@@ -1,5 +1,5 @@
 ### Single Inheritance in Go.
-```txt
+```go
 type Animal struct{}
 
 func (animal Animal) speak(){
@@ -15,7 +15,7 @@ func (dog Dog) bark(){
 }
 
 func main() {
-    dog:=Dog{}
+    	dog:=Dog{}
 	dog.speak()
 	dog.bark()
 }
