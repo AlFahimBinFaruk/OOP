@@ -15,8 +15,8 @@ func (dog Dog) bark(){
 }
 
 func main() {
-    dog:=Dog{}
-    dog.speak()
-    dog.bark()
+    	dog:=Dog{}
+    	dog.speak()
+    	dog.bark()
 }
 ```
