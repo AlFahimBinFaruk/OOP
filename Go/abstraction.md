@@ -1,7 +1,7 @@
 ### Abstraction in Go.
 ```go
-type Vehicle interface{
-	start() string;
+type Vehicle interface {
+	start() string
 }
 
 type Car struct{}
@@ -12,26 +12,26 @@ type Car struct{}
 // }
 
 // -----> Copy receiver
-func (car Car) start() string{
-	return "Car engine started.";
+func (car Car) start() string {
+	return "Car engine started."
 }
 
 type Bike struct{}
 
-func (bike Bike) start() string{
-	return "Bike engine started.";
+func (bike Bike) start() string {
+	return "Bike engine started."
 }
 
 // ----> As we have interface as func arguments it will figure out weateher i am passing pointer or copy.
-func makeVehicleStart(vehicle Vehicle){
-	fmt.Println(vehicle.start());
+func makeVehicleStart(vehicle Vehicle) {
+	fmt.Println(vehicle.start())
 }
 
 func main() {
-    // car:=&Car{};
-    car:=Car{};
-    bike:=Bike{};
-    makeVehicleStart(car);
-    makeVehicleStart(bike);
+	// car:=&Car{};
+	var car Vehicle = Car{}
+	var bike Vehicle = Bike{}
+	makeVehicleStart(car)
+	makeVehicleStart(bike)
 }
 ```
